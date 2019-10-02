@@ -47,9 +47,9 @@ Recommended - ~~1. Axios - [https://github.com/axios/axios](https://github.com/a
 
 ###### Please add any other major plugins relevant to developers, validations, js frameworks, etc.
 
-** Analytics **
+**Analytics**
 
-~~ 1. Google Analytics - [https://github.com/MatteoGabriele/vue-analytics](https://github.com/MatteoGabriele/vue-analytics)  // examples https://medium.com/dailyjs/tips-tricks-for-vue-analytics-87a9d2838915 ~~
+~~1. Google Analytics - [https://github.com/MatteoGabriele/vue-analytics](https://github.com/MatteoGabriele/vue-analytics)  // examples https://medium.com/dailyjs/tips-tricks-for-vue-analytics-87a9d2838915~~
 
 ---
 
