@@ -3,10 +3,10 @@
 1. Install Vue CLI ***npm install -g @vue/cli*** - [https://cli.vuejs.org/guide/installation.html](https://cli.vuejs.org/guide/installation.html)
   - VueJs version 2.6.10
   - Vue CLI version 3.8.0
-2. Create vue project vue create project-name
-3. Pull repository to local
+2. Create vue project ***vue create project-name***.
+3. Pull repository to local.
 4. In local, go to project ***npm install***.
-5. To run project ***npm run serve***
+5. To run project ***npm run serve***.
 
 ---
 
