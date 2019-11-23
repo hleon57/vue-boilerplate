@@ -1,29 +1,81 @@
-@mixin mq($point) {
-  @if $point == mobile {
-    @media (max-width: $mobile) { @content; }
-  }
-  @else if $point == tablet {
-    @media (max-width: $tablet) { @content; }
-  }
-  @else if $point == desktop {
-    @media (max-width: $desktop)  { @content; }
-  }
-  @else if $point == widescreen {
-    @media (max-width: $widescreen)  { @content; }
-  }
-  @else if $point == fullhd {
-    @media (max-width: $fullhd)  { @content; }
-  }
-  @else {
-    @media (max-width: $point) { @content; }
-  }
-}
-
+// * MIXIN USAGE
 /* 
  * USAGE
- *  @include mq(mobile) {
+ *  @include mq-max(mobile) {
  *    h1 {
  *      color: red;
  *    }
  *  }
 */
+
+// Media Query using max-width
+@mixin mq-max($point) {
+  @if $point == mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (max-width: $desktop) {
+      @content;
+    }
+  } @else if $point == widescreen {
+    @media (max-width: $widescreen) {
+      @content;
+    }
+  } @else if $point == fullhd {
+    @media (max-width: $fullhd) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+// Media Query in between
+@mixin mq-between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// Media Query in mobile Landscape mode deafult values using all from 320px (mobile lowres) to 1024px (tablet)
+@mixin mq-landscape($min: 320px, $max: 1024px) {
+  @media only screen and (min-device-width: $min) and (max-device-width: $min) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Media Query using min width (Mobile First)
+@mixin mq-min($point) {
+  @if $point == mobile {
+    @media (min-width: $mobile) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  } @else if $point == widescreen {
+    @media (min-width: $widescreen) {
+      @content;
+    }
+  } @else if $point == fullhd {
+    @media (min-width: $fullhd) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $point) {
+      @content;
+    }
+  }
+}
