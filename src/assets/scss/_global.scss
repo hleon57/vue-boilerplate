@@ -1,3 +1,9 @@
 *, html, body {
   box-sizing: border-box;
 }
+
+html {
+  // font size changed to 10px for the sake of using rems and easier conversion.
+  // changing this font-size will affect the entire page that is using rem.
+  font-size: 10px;  // 1rem = 10px 
+}
